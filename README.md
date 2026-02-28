@@ -1,8 +1,5 @@
-# Host-Computer-GUI-for-Dam2025
+# ROV-Control-Console
 ![GUI界面](figs/2a14c97303ae70b2d5635eec3b7f76e7.png)
-# Requirements
-*QT5,C++,GCC,QUC(directly integrated into the QT designer interface),OPENCV 4.6.0+,cuda11.x,cudnn,eigen(matrix operation library)*
-
 <table>
   <tr>
     <td width="50%" align="center"> <video src="https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d" width="100%" controls></video>
@@ -15,6 +12,8 @@
     </td>
   </tr>
 </table>
+# Requirements
+*QT5,C++,GCC,QUC(directly integrated into the QT designer interface),OPENCV 4.6.0+,cuda11.x,cudnn,eigen(matrix operation library)*
 
 ## GUI Stylesheet
 You can ask AI to generate a stylesheet corresponding with your theme easily and use setstylesheet function to apply it,which is literally what i do.
@@ -30,6 +29,8 @@ Referring to the Class **saver**,it enables you to choose whether to save image 
 
 ## LocalizationMap
 The **localizationmap** class shows how to visualize the location of the ROV.Additionally,the class **KalmanFilter** provides an idea to smooth the ROV location but i didn't use it in the contest this year given that it is not that mature.
+
+![定位地图](https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b)
 
 ## Image Stitching
 Please carefully **learn the [stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html) example in OPENCV official website first**.Then you can understand the class **stitcher** in this program.If you intend to improve it further,you can refer to [this](https://github.com/ziqiguo/CS205-ImageStitching).
@@ -51,33 +52,6 @@ Please carefully **learn the [stitching_detailed](https://docs.opencv.org/4.6.0/
 ## Real-time Rov 3D Position Display
 
 Referring to the **_3d** class,modify the **3d.qml** as needed(.obj ROV model path).Here is an example ROV model [澜巡智卫](https://www.alipan.com/s/f3p4jHjJv4x) 提取码：**50od**.
-
-<table width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <video src="https://github.com/user-attachments/assets/77a9f66e-d0a2-462a-8159-c6e35479c4f7" width="100%" controls></video>
-      <br />
-      <b>潜航过门</b>
-    </td>
-    <td align="center" width="50%">
-      <video src="https://github.com/user-attachments/assets/ab04f46d-a30e-4808-9060-75d0bb4eada9" width="100%" controls></video> <br />
-      <b>子弹运动</b>
-    </td>
-  </tr>
-
-  <tr>
-    <td align="center" width="50%">
-      <video src="https://github.com/user-attachments/assets/bdb0c721-e686-4529-aa47-eeb9f63e53e0" width="100%" controls></video>
-      <br />
-      <b>绕桩</b>
-    </td>
-    <td align="center" width="50%">
-      <video src="https://github.com/user-attachments/assets/99b29771-e3ef-4f8c-965e-28e485afc808" width="100%" controls></video>
-      <br />
-      <b>姿态自稳</b>
-    </td>
-  </tr>
-</table>
 
 ## License
 
