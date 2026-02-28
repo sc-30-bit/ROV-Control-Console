@@ -1,58 +1,63 @@
-# ROV-Control-Console
-![GUI界面](figs/2a14c97303ae70b2d5635eec3b7f76e7.png)
-<table>
-  <tr>
-    <td width="50%" align="center"> <video src="https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d" width="100%" controls></video>
-      <br />
-      <b>Third-person View</b>
-    </td>
-    <td width="50%" align="center"> <video src="https://github.com/user-attachments/assets/19950f9d-3234-482d-b3ec-de8ad022553d" width="100%" controls></video>
-      <br />
-      <b>First-person View</b>
-    </td>
-  </tr>
-</table>
-# Requirements
-*QT5,C++,GCC,QUC(directly integrated into the QT designer interface),OPENCV 4.6.0+,cuda11.x,cudnn,eigen(matrix operation library)*
+# ROV Control Console
 
-## GUI Stylesheet
-You can ask AI to generate a stylesheet corresponding with your theme easily and use setstylesheet function to apply it,which is literally what i do.
+![界面预览](figs/2a14c97303ae70b2d5635eec3b7f76e7.png)
 
-## Tcp Communication with Lower-computer
-If you've mastered how to use QT to write a simple chat program,you could easily understand the Class **tcpserver** and use it flexibly.
+## 演示视频
 
-## RTSP for Video Transmission
-Referring to the Class **rtsp**,it receives the two streams from OrangePi.(Use [Mediamtx](https://github.com/bluenviron/mediamtx) to push stream in OrangePi)
+| 第三人称视角 | 第一人称视角 |
+| --- | --- |
+| [点击观看](https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d) | [点击观看](https://github.com/user-attachments/assets/19950f9d-3234-482d-b3ec-de8ad022553d) |
 
-## Image and Video Saving
-Referring to the Class **saver**,it enables you to choose whether to save image and video or not.
+| 机动演示 |
+| --- |
+| [点击观看](https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b) |
 
-## LocalizationMap
-The **localizationmap** class shows how to visualize the location of the ROV.Additionally,the class **KalmanFilter** provides an idea to smooth the ROV location but i didn't use it in the contest this year given that it is not that mature.
+## 环境要求
 
-<video src="https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b" width="100%" controls></video>
+`Qt5`、`C++`、`GCC`、`QUC`（可直接集成到 Qt Designer）、`OpenCV 4.6.0+`、`CUDA 11.x`、`cuDNN`、`Eigen`（矩阵运算库）。
 
+## 功能说明
 
-## Image Stitching
-Please carefully **learn the [stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html) example in OPENCV official website first**.Then you can understand the class **stitcher** in this program.If you intend to improve it further,you can refer to [this](https://github.com/ziqiguo/CS205-ImageStitching).
-<table width="100%"> <tr>
-    <td align="center">
-      <video src="https://github.com/user-attachments/assets/ef1f17b2-07ff-4b9c-b810-0e07d6ec99ad" width="100%" controls></video>
-      <br />
-      <b>Step 1: Stitching Process</b> </td>
-  </tr>
-  
-  <tr>
-    <td align="center">
-      <img src="figs/58ade65cdb93bd15ab43af068c164260.png" width="100%" />
-      <br />
-      <b>Step 2: Stitched Result</b> </td>
-  </tr>
-</table>
+### GUI 样式
 
-## Real-time Rov 3D Position Display
+可通过 AI 生成主题样式表，然后使用 `setStylesheet` 快速应用到界面。
 
-Referring to the **_3d** class,modify the **3d.qml** as needed(.obj ROV model path).Here is an example ROV model [澜巡智卫](https://www.alipan.com/s/f3p4jHjJv4x) 提取码：**50od**.
+### 与下位机的 TCP 通信
+
+如果你熟悉 Qt 聊天程序的基本写法，就能很快理解 `tcpserver` 类并按需扩展。
+
+### RTSP 视频传输
+
+`rtsp` 类用于接收 OrangePi 推流的双路视频。  
+OrangePi 端可使用 [Mediamtx](https://github.com/bluenviron/mediamtx) 推流。
+
+### 图像与视频保存
+
+`saver` 类支持按需启用或关闭图像/视频保存。
+
+### 定位地图显示
+
+`localizationmap` 类用于可视化 ROV 位置。  
+`KalmanFilter` 类提供了轨迹平滑思路（当前版本未在比赛中启用）。
+
+## 图像拼接
+
+建议先阅读 OpenCV 官方 `stitching_detailed` 示例，再理解本项目的 `stitcher` 类：  
+[stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html)  
+进阶参考：[CS205-ImageStitching](https://github.com/ziqiguo/CS205-ImageStitching)
+
+| 步骤1：拼接过程 |
+| --- |
+| [点击观看](https://github.com/user-attachments/assets/ef1f17b2-07ff-4b9c-b810-0e07d6ec99ad) |
+
+| 步骤2：拼接结果 |
+| --- |
+| ![拼接结果](figs/58ade65cdb93bd15ab43af068c164260.png) |
+
+## 实时 ROV 三维姿态显示
+
+参考 `_3d` 类，并按需修改 `3d.qml`（`.obj` 模型路径）。  
+示例模型下载：[海卫](https://www.alipan.com/s/f3p4jHjJv4x)（提取码：`50od`）。
 
 ## License
 
