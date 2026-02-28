@@ -5,11 +5,13 @@
 
 <table>
   <tr>
-    <td width="50%" align="center"> <video src="figs/Image92.mp4" width="100%" controls></video>
+    <td width="50%" align="center">
+      <video src="figs/Image92.mp4" width="100%" muted autoplay loop playsinline></video>
       <br />
       <b>Third-person View</b>
     </td>
-    <td width="50%" align="center"> <video src="figs/Image91.mp4" width="100%" controls></video>
+    <td width="50%" align="center">
+      <video src="figs/Image91.mp4" width="100%" muted autoplay loop playsinline></video>
       <br />
       <b>First-person View</b>
     </td>
