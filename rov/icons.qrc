@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/WIFI.png</file>
+        <file>icons/手柄.png</file>
+        <file>icons/用户.png</file>
+        <file>icons/设置.png</file>
+        <file>icons/901 1.png</file>
+        <file>icons/双箭头-右.png</file>
+        <file>icons/水深.png</file>
+        <file>icons/截屏.png</file>
+        <file>icons/录像.png</file>
+        <file>icons/速度表盘.png</file>
+        <file>icons/照明，手电筒.png</file>
+        <file>3d_.qml</file>
+        <file>pictures/btn_ok.png</file>
+        <file>pictures/btn_close.png</file>
+        <file>pictures/th-removebg-preview.png</file>
+        <file>pictures/rover-removebg-preview.png</file>
+        <file>pictures/rov.jpg</file>
+        <file>pictures/rov2.png</file>
+        <file>pictures/pool.jpeg</file>
+        <file>pictures/t01944258274c5e34ce.jpg</file>
+        <file>pictures/t01944258274c5e34ce_copy.jpg</file>
+        <file>pictures/src=http___image109.360doc.com_DownloadImg_2024_04_0812_282127262_7_20240408121915252&amp;refer=http___image109.360doc.webp</file>
+        <file>pictures/7CAA45F18C7A68430A750C0F6147A263.jpg</file>
+        <file>icons/9F283414E04F7C3E341A6219ABE909FC.png</file>
+        <file>icons/双箭头.png</file>
+        <file>icons/双箭头 (1).png</file>
+        <file>icons/双箭头 (3).png</file>
+    </qresource>
+</RCC>
