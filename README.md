@@ -30,7 +30,8 @@ Referring to the Class **saver**,it enables you to choose whether to save image 
 ## LocalizationMap
 The **localizationmap** class shows how to visualize the location of the ROV.Additionally,the class **KalmanFilter** provides an idea to smooth the ROV location but i didn't use it in the contest this year given that it is not that mature.
 
-![定位地图](https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b)
+<video src="https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b" width="100%" controls></video>
+
 
 ## Image Stitching
 Please carefully **learn the [stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html) example in OPENCV official website first**.Then you can understand the class **stitcher** in this program.If you intend to improve it further,you can refer to [this](https://github.com/ziqiguo/CS205-ImageStitching).
