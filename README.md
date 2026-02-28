@@ -7,12 +7,12 @@
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <video src="https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d" width="85%" controls></video>
       <br />
       <b>Third-person View</b>
     </td>
     <td width="50%" align="center">
-      <video src="https://github.com/user-attachments/assets/19950f9d-3234-482d-b3ec-de8ad022553d" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/19950f9d-3234-482d-b3ec-de8ad022553d" width="85%" controls></video>
       <br />
       <b>First-person View</b>
     </td>
@@ -45,7 +45,7 @@ The `saver` class lets you choose whether to save images and videos.
 The `localizationmap` class visualizes ROV position.  
 The `KalmanFilter` class provides a smoothing idea for ROV trajectory.
 
-<video src="https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b" width="85%" controls></video>
 
 ## Image Stitching
 
@@ -58,7 +58,7 @@ For further optimization, refer to [CS205-ImageStitching](https://github.com/ziq
 <table width="100%">
   <tr>
     <td align="center">
-      <video src="https://github.com/user-attachments/assets/ef1f17b2-07ff-4b9c-b810-0e07d6ec99ad" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/ef1f17b2-07ff-4b9c-b810-0e07d6ec99ad" width="85%" controls></video>
       <br />
       <b>Step 1: Stitching Process</b>
     </td>
