@@ -19,8 +19,6 @@
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b" width="100%" controls></video>
-
 ## Requirements
 
 `Qt5`, `C++`, `GCC`, `QUC` (directly integrated into Qt Designer), `OpenCV 4.6.0+`, `CUDA 11.x`, `cuDNN`, `Eigen` (matrix library).
@@ -46,6 +44,8 @@ The `saver` class lets you choose whether to save images and videos.
 
 The `localizationmap` class visualizes ROV position.  
 The `KalmanFilter` class provides a smoothing idea for ROV trajectory.
+
+<video src="https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b" width="100%" controls></video>
 
 ## Image Stitching
 
