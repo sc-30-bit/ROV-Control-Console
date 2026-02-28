@@ -5,11 +5,11 @@
 
 <table>
   <tr>
-    <td width="50%" align="center"> <img src="figs/image92.mp4" width="100%" />
+    <td width="50%" align="center"> <video src="figs/image92.mp4" width="100%" controls></video>
       <br />
       <b>Third-person View</b>
     </td>
-    <td width="50%" align="center"> <img src="figs/image91.mp4" width="100%" />
+    <td width="50%" align="center"> <video src="figs/image91.mp4" width="100%" controls></video>
       <br />
       <b>First-person View</b>
     </td>
@@ -35,7 +35,7 @@ The **localizationmap** class shows how to visualize the location of the ROV.Add
 Please carefully **learn the [stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html) example in OPENCV official website first**.Then you can understand the class **stitcher** in this program.If you intend to improve it further,you can refer to [this](https://github.com/ziqiguo/CS205-ImageStitching).
 <table width="100%"> <tr>
     <td align="center">
-      <img src="figs/image74.mp4" width="100%" />
+      <video src="figs/image74.mp4" width="100%" controls></video>
       <br />
       <b>Step 1: Stitching Process</b> </td>
   </tr>
@@ -55,24 +55,24 @@ Referring to the **_3d** class,modify the **3d.qml** as needed(.obj ROV model pa
 <table width="100%">
   <tr>
     <td align="center" width="50%">
-      <img src="figs/image89.mp4" width="100%" />
+      <video src="figs/image89.mp4" width="100%" controls></video>
       <br />
       <b>潜航过门</b>
     </td>
     <td align="center" width="50%">
-      <img src="figs/image90.mp4" width="100%" /> <br />
+      <video src="figs/image90.mp4" width="100%" controls></video> <br />
       <b>子弹运动</b>
     </td>
   </tr>
 
   <tr>
     <td align="center" width="50%">
-      <img src="figs/image88.mp4" width="100%" />
+      <video src="figs/image88.mp4" width="100%" controls></video>
       <br />
       <b>绕桩</b>
     </td>
     <td align="center" width="50%">
-      <img src="figs/image87.mp4" width="100%" />
+      <video src="figs/image87.mp4" width="100%" controls></video>
       <br />
       <b>姿态自稳</b>
     </td>
