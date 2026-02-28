@@ -5,13 +5,11 @@
 
 <table>
   <tr>
-    <td width="50%" align="center">
-      <video src="figs/Image92.mp4" width="100%" muted autoplay loop playsinline></video>
+    <td width="50%" align="center"> <video src="https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d" width="100%" controls></video>
       <br />
       <b>Third-person View</b>
     </td>
-    <td width="50%" align="center">
-      <video src="figs/Image91.mp4" width="100%" muted autoplay loop playsinline></video>
+    <td width="50%" align="center"> <video src="https://github.com/user-attachments/assets/19950f9d-3234-482d-b3ec-de8ad022553d" width="100%" controls></video>
       <br />
       <b>First-person View</b>
     </td>
@@ -37,7 +35,7 @@ The **localizationmap** class shows how to visualize the location of the ROV.Add
 Please carefully **learn the [stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html) example in OPENCV official website first**.Then you can understand the class **stitcher** in this program.If you intend to improve it further,you can refer to [this](https://github.com/ziqiguo/CS205-ImageStitching).
 <table width="100%"> <tr>
     <td align="center">
-      <video src="figs/Image74.mp4" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/ef1f17b2-07ff-4b9c-b810-0e07d6ec99ad" width="100%" controls></video>
       <br />
       <b>Step 1: Stitching Process</b> </td>
   </tr>
@@ -57,24 +55,24 @@ Referring to the **_3d** class,modify the **3d.qml** as needed(.obj ROV model pa
 <table width="100%">
   <tr>
     <td align="center" width="50%">
-      <video src="figs/Image89.mp4" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/77a9f66e-d0a2-462a-8159-c6e35479c4f7" width="100%" controls></video>
       <br />
       <b>潜航过门</b>
     </td>
     <td align="center" width="50%">
-      <video src="figs/Image90.mp4" width="100%" controls></video> <br />
+      <video src="https://github.com/user-attachments/assets/ab04f46d-a30e-4808-9060-75d0bb4eada9" width="100%" controls></video> <br />
       <b>子弹运动</b>
     </td>
   </tr>
 
   <tr>
     <td align="center" width="50%">
-      <video src="figs/Image88.mp4" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/bdb0c721-e686-4529-aa47-eeb9f63e53e0" width="100%" controls></video>
       <br />
       <b>绕桩</b>
     </td>
     <td align="center" width="50%">
-      <video src="figs/Image87.mp4" width="100%" controls></video>
+      <video src="https://github.com/user-attachments/assets/99b29771-e3ef-4f8c-965e-28e485afc808" width="100%" controls></video>
       <br />
       <b>姿态自稳</b>
     </td>
