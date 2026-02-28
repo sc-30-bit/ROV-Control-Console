@@ -1,63 +1,81 @@
 # ROV Control Console
 
-![界面预览](figs/2a14c97303ae70b2d5635eec3b7f76e7.png)
+![GUI Preview](figs/2a14c97303ae70b2d5635eec3b7f76e7.png)
 
-## 演示视频
+## Demo Videos
 
-| 第三人称视角 | 第一人称视角 |
-| --- | --- |
-| [点击观看](https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d) | [点击观看](https://github.com/user-attachments/assets/19950f9d-3234-482d-b3ec-de8ad022553d) |
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <video src="https://github.com/user-attachments/assets/dbc5ccab-f5d6-47d4-9ec9-3d5ce958680d" width="100%" controls></video>
+      <br />
+      <b>Third-person View</b>
+    </td>
+    <td width="50%" align="center">
+      <video src="https://github.com/user-attachments/assets/19950f9d-3234-482d-b3ec-de8ad022553d" width="100%" controls></video>
+      <br />
+      <b>First-person View</b>
+    </td>
+  </tr>
+</table>
 
-| 机动演示 |
-| --- |
-| [点击观看](https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b) |
+<video src="https://github.com/user-attachments/assets/43791a6b-ef61-429b-9d66-44579fb8a69b" width="100%" controls></video>
 
-## 环境要求
+## Requirements
 
-`Qt5`、`C++`、`GCC`、`QUC`（可直接集成到 Qt Designer）、`OpenCV 4.6.0+`、`CUDA 11.x`、`cuDNN`、`Eigen`（矩阵运算库）。
+`Qt5`, `C++`, `GCC`, `QUC` (directly integrated into Qt Designer), `OpenCV 4.6.0+`, `CUDA 11.x`, `cuDNN`, `Eigen` (matrix library).
 
-## 功能说明
+## GUI Stylesheet
 
-### GUI 样式
+You can use AI to generate a theme stylesheet and apply it with `setStylesheet`.
 
-可通过 AI 生成主题样式表，然后使用 `setStylesheet` 快速应用到界面。
+## TCP Communication with Lower Computer
 
-### 与下位机的 TCP 通信
+If you already know how to build a basic Qt chat app, you can quickly understand the `tcpserver` class and extend it as needed.
 
-如果你熟悉 Qt 聊天程序的基本写法，就能很快理解 `tcpserver` 类并按需扩展。
+## RTSP Video Transmission
 
-### RTSP 视频传输
+The `rtsp` class receives two streams from OrangePi.  
+Use [Mediamtx](https://github.com/bluenviron/mediamtx) on OrangePi for pushing streams.
 
-`rtsp` 类用于接收 OrangePi 推流的双路视频。  
-OrangePi 端可使用 [Mediamtx](https://github.com/bluenviron/mediamtx) 推流。
+## Image and Video Saving
 
-### 图像与视频保存
+The `saver` class lets you choose whether to save images and videos.
 
-`saver` 类支持按需启用或关闭图像/视频保存。
+## Localization Map
 
-### 定位地图显示
+The `localizationmap` class visualizes ROV position.  
+The `KalmanFilter` class provides a smoothing idea for ROV trajectory.
 
-`localizationmap` 类用于可视化 ROV 位置。  
-`KalmanFilter` 类提供了轨迹平滑思路（当前版本未在比赛中启用）。
+## Image Stitching
 
-## 图像拼接
+Please read OpenCV official sample first:  
+[stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html)
 
-建议先阅读 OpenCV 官方 `stitching_detailed` 示例，再理解本项目的 `stitcher` 类：  
-[stitching_detailed](https://docs.opencv.org/4.6.0/d9/dd8/samples_2cpp_2stitching_detailed_8cpp-example.html)  
-进阶参考：[CS205-ImageStitching](https://github.com/ziqiguo/CS205-ImageStitching)
+Then check this project `stitcher` class.  
+For further optimization, refer to [CS205-ImageStitching](https://github.com/ziqiguo/CS205-ImageStitching).
 
-| 步骤1：拼接过程 |
-| --- |
-| [点击观看](https://github.com/user-attachments/assets/ef1f17b2-07ff-4b9c-b810-0e07d6ec99ad) |
+<table width="100%">
+  <tr>
+    <td align="center">
+      <video src="https://github.com/user-attachments/assets/ef1f17b2-07ff-4b9c-b810-0e07d6ec99ad" width="100%" controls></video>
+      <br />
+      <b>Step 1: Stitching Process</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="figs/58ade65cdb93bd15ab43af068c164260.png" width="100%" />
+      <br />
+      <b>Step 2: Stitched Result</b>
+    </td>
+  </tr>
+</table>
 
-| 步骤2：拼接结果 |
-| --- |
-| ![拼接结果](figs/58ade65cdb93bd15ab43af068c164260.png) |
+## Real-time ROV 3D Position Display
 
-## 实时 ROV 三维姿态显示
-
-参考 `_3d` 类，并按需修改 `3d.qml`（`.obj` 模型路径）。  
-示例模型下载：[海卫](https://www.alipan.com/s/f3p4jHjJv4x)（提取码：`50od`）。
+Refer to the `_3d` class and update `3d.qml` as needed (`.obj` model path).  
+Example ROV model: [Haiwei](https://www.alipan.com/s/f3p4jHjJv4x), extraction code: `50od`.
 
 ## License
 
