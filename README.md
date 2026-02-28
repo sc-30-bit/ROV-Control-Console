@@ -1,4 +1,4 @@
-# ROV Control Console
+# ROV-Control-Console
 
 ![GUI Preview](figs/2a14c97303ae70b2d5635eec3b7f76e7.png)
 
