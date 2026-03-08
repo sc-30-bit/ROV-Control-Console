@@ -45,7 +45,6 @@ The `saver` class lets you choose whether to save images and videos.
 The `localizationmap` class visualizes ROV position.  
 The `KalmanFilter` class provides a smoothing idea for ROV trajectory.
 
-<video src="https://github.com/user-attachments/assets/7522e47d-0ffb-4cef-993c-863e858d4147" width="100%" controls></video>
 
 ## Image Stitching
 
