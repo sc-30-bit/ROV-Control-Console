@@ -80,26 +80,3 @@ Example ROV model: [Haiwei](https://www.alipan.com/s/f3p4jHjJv4x), extraction co
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-## Face Pig Mask Script (Python)
-
-Use this helper script to overlay a pig icon on a fixed ROI in every frame.
-
-1. Install dependency:
-
-```bash
-pip install opencv-python numpy
-```
-
-2. Run:
-
-```bash
-python tools/face_pig_mask.py --input figs/Image90.mp4 --icon GIGIBoy.webp --output output_face_mask.mp4 --select-roi
-```
-
-Optional params:
-- `--roi x,y,w,h` use fixed ROI instead of interactive selection
-- `--roi-preview path` save first frame when ROI GUI is unavailable (default `roi_preview.jpg`)
-
-If ROI window cannot open (OpenCV GUI not available), script falls back to matplotlib ROI selection.
-If that also fails, it saves first frame to `roi_preview.jpg` and asks you to rerun with `--roi x,y,w,h`.
